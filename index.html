@@ -1,76 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Advocacia Exemplo | Escritório e Atendimento</title>
-  <meta name="description" content="Modelo de site institucional para advocacia em tema claro, com áreas de atuação, equipe, FAQ e contato." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advocacia Premium | Assessoria Jurídica Estratégica</title>
+  <meta name="description" content="Assessoria jurídica profissional com foco em estratégia, clareza e confiança. Direito Empresarial, Contratos, Trabalhista e Consumidor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <!-- Header -->
   <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="#topo" aria-label="Ir para o início">
-        <span class="brand-mark" aria-hidden="true"></span>
+      <a class="brand" href="#topo">
+        <div class="brand-mark"></div>
         <span class="brand-text">
-          <strong>Advocacia</strong> Exemplo
+          <strong>Advocacia</strong> Premium
         </span>
       </a>
 
-      <nav class="nav" aria-label="Navegação principal">
+      <nav class="nav" id="nav">
         <a href="#sobre">Sobre</a>
-        <a href="#atuacao">Atuação</a>
+        <a href="#servicos">Serviços</a>
         <a href="#equipe">Equipe</a>
         <a href="#faq">FAQ</a>
-        <a class="btn btn-sm" href="#contato">Contato</a>
+        <a href="#contato" class="btn btn-sm">Contato</a>
       </nav>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">
-        <span></span><span></span><span></span>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
-
-    <nav class="mobile-nav" id="mobileNav" aria-label="Navegação no celular">
-      <a href="#sobre">Sobre</a>
-      <a href="#atuacao">Atuação</a>
-      <a href="#equipe">Equipe</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contato">Contato</a>
-    </nav>
   </header>
 
   <main id="topo">
+    <!-- Hero Section -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <p class="pill">Escritório • Atendimento claro • Modelo institucional</p>
-          <h1>Assessoria jurídica com estratégia, clareza e confiança.</h1>
-          <p class="lead">
-            Um site para advocacia com foco em apresentação do escritório, áreas de atuação e contato.
-          </p>
+          <div class="pill">Escritório • Atendimento Estratégico • Confiança</div>
+          <h1>Assessoria Jurídica com <span class="accent-gold">Estratégia</span>, Clareza e Confiança</h1>
+          <p class="lead">Um escritório de advocacia moderno que transforma desafios jurídicos em soluções estratégicas, com transparência e comunicação clara.</p>
+          
           <div class="hero-actions">
-            <a class="btn" href="#contato">Falar com o escritório</a>
-            <a class="btn btn-ghost" href="#atuacao">Ver áreas de atuação</a>
+            <a href="#contato" class="btn">Agendar Consulta</a>
+            <a href="#servicos" class="btn btn-ghost">Conheça Nossos Serviços</a>
           </div>
 
-          <div class="hero-metrics" role="list">
-            <div class="metric" role="listitem">
-              <strong>Atendimento</strong>
-              <span>online e presencial</span>
+          <div class="hero-metrics">
+            <div class="metric">
+              <p class="metric-number">15+</p>
+              <p class="metric-label">Anos de Experiência</p>
             </div>
-            <div class="metric" role="listitem">
-              <strong>Transparência</strong>
-              <span>etapas e prazos</span>
+            <div class="metric">
+              <p class="metric-number">500+</p>
+              <p class="metric-label">Clientes Satisfeitos</p>
             </div>
-            <div class="metric" role="listitem">
-              <strong>Comunicação</strong>
-              <span>sem juridiquês</span>
+            <div class="metric">
+              <p class="metric-number">24h</p>
+              <p class="metric-label">Resposta Garantida</p>
             </div>
           </div>
         </div>
 
-        <div class="hero-card" aria-label="Resumo de confiança">
+        <div class="hero-card">
           <h2>O que você pode esperar</h2>
           <ul class="checklist">
             <li>Triagem do caso e orientação inicial</li>
@@ -93,10 +90,11 @@
       </div>
     </section>
 
+    <!-- Sobre Section -->
     <section class="section" id="sobre">
       <div class="container section-grid">
         <div>
-          <h2>Sobre o escritório</h2>
+          <h2>Sobre o Escritório</h2>
           <p class="muted">
             Atuamos com foco em Direito do Trabalho, oferecendo uma assessoria completa e estratégica tanto para trabalhadores quanto para empresas. Nosso compromisso é garantir que cada cliente tenha seus direitos respeitados, com atendimento humanizado, transparente e altamente técnico.
           </p>
@@ -118,29 +116,31 @@
         </div>
 
         <div class="panel">
-          <h3>Como funciona</h3>
+          <h3>Como Funciona</h3>
           <ol class="steps">
-            <li><strong>Primeiro contato</strong>: você explica o caso e o objetivo (o que precisa resolver).</li>
-            <li><strong>Triagem e documentos</strong>: pedimos informações essenciais e analisamos viabilidade e riscos.</li>
-            <li><strong>Estratégia</strong>: definimos o caminho (orientação, notificação, acordo, ação, defesa, etc.).</li>
-            <li><strong>Acompanhamento</strong>: andamento com atualizações e próximos passos bem definidos.</li>
+            <li><strong>Primeiro Contato</strong>: você explica o caso e o objetivo.</li>
+            <li><strong>Triagem</strong>: pedimos informações essenciais e analisamos viabilidade.</li>
+            <li><strong>Estratégia</strong>: definimos o caminho (orientação, notificação, acordo, ação, etc.).</li>
+            <li><strong>Acompanhamento</strong>: andamento com atualizações bem definidas.</li>
           </ol>
-          <a class="btn btn-wide" href="#contato">Entrar em contato</a>
+          <a href="#contato" class="btn btn-wide">Entrar em Contato</a>
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="atuacao">
+    <!-- Serviços Section -->
+    <section class="section alt" id="servicos">
       <div class="container">
         <div class="section-head">
-          <h2>Áreas de atuação</h2>
-          <p class="muted">Abaixo nossas areas de atuação.</p>
+          <h2>Áreas de Atuação</h2>
+          <p class="muted">Soluções jurídicas especializadas para seus desafios</p>
         </div>
 
         <div class="cards">
           <article class="card">
+            <div class="card-icon">📋</div>
             <h3>Direito Empresarial</h3>
-            <p>Consultoria, decisões estratégicas e suporte jurídico para rotina de negócios.</p>
+            <p>Consultoria estratégica, decisões jurídicas e suporte para rotina de negócios.</p>
             <div class="tagrow">
               <span class="tag">Consultoria</span>
               <span class="tag">Empresas</span>
@@ -148,6 +148,7 @@
           </article>
 
           <article class="card">
+            <div class="card-icon">📄</div>
             <h3>Contratos</h3>
             <p>Elaboração e revisão com foco em segurança jurídica e prevenção de conflitos.</p>
             <div class="tagrow">
@@ -157,7 +158,8 @@
           </article>
 
           <article class="card">
-            <h3>Trabalhista</h3>
+            <div class="card-icon">👥</div>
+            <h3>Direito Trabalhista</h3>
             <p>Orientação preventiva, políticas internas e atuação em demandas específicas.</p>
             <div class="tagrow">
               <span class="tag">Prevenção</span>
@@ -166,7 +168,8 @@
           </article>
 
           <article class="card">
-            <h3>Consumidor</h3>
+            <div class="card-icon">🛡️</div>
+            <h3>Direito do Consumidor</h3>
             <p>Negociações, defesa e medidas cabíveis em conflitos de consumo.</p>
             <div class="tagrow">
               <span class="tag">Acordos</span>
@@ -177,30 +180,42 @@
       </div>
     </section>
 
+    <!-- Equipe Section -->
     <section class="section" id="equipe">
       <div class="container">
         <div class="section-head">
-          <h2>Equipe</h2>
+          <h2>Nossa Equipe</h2>
+          <p class="muted">Profissionais experientes dedicados ao seu sucesso</p>
         </div>
 
         <div class="team">
           <article class="member">
-            <div class="avatar" aria-hidden="true"></div>
+            <div class="avatar"></div>
             <div class="member-body">
               <h3>Dr. Exemplo</h3>
-              <p class="muted">OAB/BA • Trabalhista • Atendimento online/presencial</p>
-              <p>Descrição curta sobre o advogado.</p>
+              <p class="muted">OAB/BA • Direito Trabalhista • Atendimento online/presencial</p>
+              <p>Sócio fundador com mais de 15 anos de experiência em direito trabalhista e consultoria empresarial.</p>
+            </div>
+          </article>
+
+          <article class="member">
+            <div class="avatar"></div>
+            <div class="member-body">
+              <h3>Dra. Exemplo 2</h3>
+              <p class="muted">OAB/BA • Direito Empresarial • Atendimento online/presencial</p>
+              <p>Especialista em direito empresarial com foco em contratos e consultoria estratégica para empresas.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- FAQ Section -->
     <section class="section alt" id="faq">
       <div class="container">
         <div class="section-head">
-          <h2>Perguntas frequentes</h2>
-          <p class="muted">FAQ para alinhar expectativas e reduzir dúvidas no primeiro contato.</p>
+          <h2>Perguntas Frequentes</h2>
+          <p class="muted">Dúvidas comuns respondidas com clareza</p>
         </div>
 
         <div class="faq">
@@ -227,84 +242,85 @@
       </div>
     </section>
 
+    <!-- Contato Section -->
     <section class="section" id="contato">
       <div class="container contact-grid">
         <div>
-          <h2>Contato</h2>
+          <h2>Entre em Contato</h2>
           <p class="muted">
-            Fale com o escritório e descreva brevemente sua necessidade. Você pode escolher WhatsApp ou e-mail.
+            Fale com o escritório e descreva brevemente sua necessidade. Você pode escolher WhatsApp ou e-mail para iniciar sua consulta.
           </p>
 
           <div class="contact-cards">
             <div class="contact-card">
               <strong>WhatsApp</strong>
               <span class="muted">Atendimento rápido</span>
-              <a class="btn btn-ghost btn-wide" id="whatsLink" href="#" target="_blank" rel="noopener">Abrir WhatsApp</a>
+              <a class="btn btn-ghost btn-wide" href="https://wa.me/5541984534917?text=Olá%20Advocacia%20Premium%2C%20gostaria%20de%20agendar%20uma%20consulta" target="_blank">Abrir WhatsApp</a>
             </div>
 
             <div class="contact-card">
               <strong>E-mail</strong>
               <span class="muted">Para documentos e detalhes</span>
-              <a class="btn btn-ghost btn-wide" href="mailto:contato@exemplo.com">Enviar e-mail</a>
+              <a class="btn btn-ghost btn-wide" href="mailto:contato@advocacia.com">Enviar E-mail</a>
             </div>
           </div>
         </div>
 
-        <form class="form" id="contactForm" autocomplete="on">
+        <form class="form" id="contactForm">
           <div class="field">
             <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+            <input id="nome" name="nome" type="text" placeholder="Seu nome completo" required>
           </div>
 
           <div class="field">
             <label for="email">E-mail</label>
-            <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" required />
+            <input id="email" name="email" type="email" placeholder="seu@email.com" required>
           </div>
 
           <div class="field">
             <label for="assunto">Assunto</label>
             <select id="assunto" name="assunto" required>
-              <option value="" selected disabled>Selecione</option>
-              <option value="Consulta">Consulta</option>
-              <option value="Contrato">Contratos</option>
-              <option value="Empresarial">Empresarial</option>
-              <option value="Trabalhista">Trabalhista</option>
-              <option value="Consumidor">Consumidor</option>
-              <option value="Outro">Outro</option>
+              <option value="">Selecione um assunto</option>
+              <option value="Consulta">Consulta Geral</option>
+              <option value="Contratos">Contratos</option>
+              <option value="Empresarial">Direito Empresarial</option>
+              <option value="Trabalhista">Direito Trabalhista</option>
+              <option value="Consumidor">Direito do Consumidor</option>
             </select>
           </div>
 
           <div class="field">
             <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Explique rapidamente sua necessidade..." required></textarea>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva sua necessidade..." required></textarea>
           </div>
 
           <div class="form-actions">
-            <button class="btn" type="submit">Gerar mensagem</button>
-            <button class="btn btn-ghost" type="button" id="clearBtn">Limpar</button>
+            <button class="btn" type="submit">Enviar Mensagem</button>
+            <button class="btn btn-ghost" type="reset">Limpar</button>
           </div>
         </form>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-grid">
       <div>
         <div class="footer-brand">
-          <span class="brand-mark" aria-hidden="true"></span>
-          <strong>Advocacia Exemplo</strong>
+          <div class="brand-mark"></div>
+          <strong>Advocacia Premium</strong>
         </div>
         <p class="muted">
-          Modelo institucional para exemplo.
+          Assessoria jurídica estratégica com foco em excelência, transparência e resultados.
         </p>
       </div>
 
       <div>
-        <strong>Links</strong>
+        <strong>Links Rápidos</strong>
         <div class="footer-links">
           <a href="#sobre">Sobre</a>
-          <a href="#atuacao">Atuação</a>
+          <a href="#servicos">Serviços</a>
           <a href="#equipe">Equipe</a>
           <a href="#contato">Contato</a>
         </div>
@@ -313,20 +329,20 @@
       <div>
         <strong>Contato</strong>
         <div class="footer-links">
-          <a href="mailto:brunnotj7@gmail.com">brunnotj7@gmail.com</a>
-          <a href="#contato" id="phoneText">(41) 9 8453-4917</a>
+          <a href="mailto:contato@advocacia.com">contato@advocacia.com</a>
+          <a href="tel:+5541984534917">(41) 9 8453-4917</a>
           <span class="muted">Camaçari • BA</span>
         </div>
       </div>
     </div>
 
     <div class="container footer-bottom">
-      <span class="muted">© <span id="year"></span> Advocacia Exemplo. Todos os direitos reservados.</span>
+      <span class="muted">© <span id="year"></span> Advocacia Premium. Todos os direitos reservados.</span>
       <a class="muted" href="#topo">Voltar ao topo</a>
     </div>
   </footer>
 
-  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="script.js"></script>
 </body>
